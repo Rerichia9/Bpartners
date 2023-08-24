@@ -1,0 +1,1228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BPartners</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="BPartners affiliate program">
+    <meta property="og:site_name" content="BPartners">
+    <meta property="og:title" content="BPartners">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="BPartners affiliate program">
+    <meta property="og:image" content="./img/logo.svg">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:url" content="localhost">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link type="text/css" href="css/uikit.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css?1" rel="stylesheet">
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0a130f">
+    <link rel="icon" href="./img/favicon.png">
+    <script src="js/uikit.js"></script>
+</head>
+<body>
+<header class="head">
+    <div class="uk-container">
+        <div class="head-inner">
+            <div class="" data-uk-grid="">
+                <div class="uk-width-auto">
+                    <div class="logotype"><span>B</span><span>Partners</span></div>
+                </div>
+                <div class="uk-width-expand uk-flex uk-flex-middle uk-flex-right">
+                    <nav>
+                        <ul>
+                            <li><a data-text="Commission" href="#commission" data-uk-scroll>Commission</a></li>
+                            <li><a data-text="About our product" href="#about" data-uk-scroll>About our product</a></li>
+                            <li><a data-text="FAQ" href="#faq" data-uk-scroll>FAQ</a></li>
+                            <li><a data-text="Contacts" href="#contacts" data-uk-scroll>Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div class="uk-grid-small uk-visible@m" data-uk-grid="">
+                        <div>
+                            <a class="uk-button uk-button-secondary" href="#modal-login" data-uk-toggle>Log in</a>
+                        </div>
+                        <div>
+                            <a class="uk-button uk-button-primary" href="#modal-register" data-uk-toggle>Get started</a>
+                        </div>
+                    </div>
+                    <div class="head-select" data-select>
+                        <input type="hidden" name="wish_currency">
+                        <div class="custom-select-field">
+                            <div class="custom-select-value">
+                                <img src="./img/country/russia.svg" alt="Russia">
+                            </div>
+                            <div class="custom-select-arrow">
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L7 7L13 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="custom-select-options">
+                            <ul>
+                                <li data-value="Russia" class="selected">
+                                    <img width="26" height="22" src="./img/country/russia.svg" alt="Russia">
+                                </li>
+                                <li data-value="Japan">
+                                    <img width="26" height="22" src="./img/country/japan.svg" alt="Japan">
+                                </li>
+                                <li data-value="Japan">
+                                    <img width="26" height="22" src="./img/country/usa.svg" alt="USA">
+                                </li>
+                                <li data-value="Portugal">
+                                    <img width="26" height="22" src="./img/country/portugal.svg" alt="Portugal">
+                                </li>
+                                <li data-value="French">
+                                    <img width="26" height="22" src="./img/country/french.svg" alt="French">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a class="uk-hidden@m head-menu-btn" href="#menu" data-uk-toggle>
+                        <img width="18" height="12" src="./img/icons/menu.svg" alt="Menu">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+<div class="hero-section animated">
+    <div class="hero-section-inner">
+        <div class="uk-container animated">
+            <div class="hero-section-heading animated">
+                <div class="hero-section-title"><span class="logotype"><span>B</span><span>Partners</span></span>
+                    affiliate&nbsp;program
+                </div>
+                <div class="section-desc section-desc-green hero-desc">Invite players and earn money</div>
+            </div>
+            <div class="earn-form">
+                <div class="earn-form-title">How much do you want to earn per month?</div>
+                <div class="uk-position-relative">
+                    <span class="earn-form-currency">€</span>
+                    <input class="uk-input" id="input-calc" maxlength="12" placeholder="0,000.00"
+                           pattern="^\d+(?:,\d{0,2})?$" type="text" data-type="currency">
+                    <div class="earn-select" id="currency-change" data-select data-currency-select>
+                        <input name="earn-select" type="hidden" value="0">
+                        <div class="custom-select-field">
+                            <div class="custom-select-value">EUR</div>
+                            <div class="custom-select-arrow">
+                                <svg fill="none" height="8" viewBox="0 0 14 8" width="14"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L7 7L13 1" stroke="white" stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="custom-select-options">
+                            <ul>
+                                <li class="selected" data-value="0">EUR</li>
+                                <li data-value="1">BTC</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="earn-form-info">
+                    <div class="earn-form-info-row">
+                        <div class="uk-flex">
+                            <img alt="Tolltip" height="11" src="./img/icons/tooltip-sm.svg" width="11">
+                            <div class="tooltip-small" data-uk-drop="pos: left-center">
+                                <div class="tooltip">The profit of the casino is determined by the amount of bets,
+                                    winnings and bonuses + an administrative fee
+                                </div>
+                            </div>
+                            <div class="earn-form-info-name">Required casino profit</div>
+                        </div>
+                        <div class="earn-form-info-value"><span class="earn-form-info-currency">€</span> <span id="calc-profit">0</span></div>
+                    </div>
+                    <div class="earn-form-info-row">
+                        <div class="uk-flex">
+                            <img alt="Tolltip" height="11" src="./img/icons/tooltip-sm.svg" width="11">
+                            <div class="tooltip-small" data-uk-drop="pos: left-center">
+                                <div class="tooltip" id="commision-tooltip">
+                                    <ul>
+                                        <li>35% up to €5,000</li>
+                                        <li>40% from €5,000 to €10,000</li>
+                                        <li>45% from €10,000 to €20,000</li>
+                                        <li>50% more than €20,000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="earn-form-info-name">Commission percentage</div>
+                        </div>
+                        <div class="earn-form-info-value"><span id="calc-percentage">0</span>%</div>
+                    </div>
+                </div>
+                <div class="earn-form-registration">
+                    <img alt="clock" height="11" src="./img/icons/clock.svg" width="11">
+                    <span>Registration in 1 minute</span>
+                </div>
+                <div class="earn-form-btn">
+                    <a class="uk-button uk-button-primary uk-width-auto@m uk-width-1-1" href="#modal-register" data-uk-toggle>Start earning money</a>
+                </div>
+                <a class="earn-form-link" href="#modal-terms" data-uk-toggle>Terms and Conditions</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-section-arrow">
+        <span>Detailed information</span>
+        <img alt="Scroll" height="32" src="./img/icons/scroll.svg" width="21">
+    </div>
+</div>
+<div class="uk-section pt110 pb200-20 animated uk-overflow-hidden">
+    <div class="uk-container">
+        <div class="uk-position-relative overflow-visible uk-visible-toggle uk-light" data-uk-slider="finite: true"
+             tabindex="-1">
+
+            <ul class="uk-slider-items uk-grid-large animated" data-uk-grid>
+                <li class="uk-width-1-3@m uk-width-auto">
+                    <a class="advantage-card advantage-card-green" data-uk-toggle href="#modal-join">
+                        <div class="advantage-card-title">Join us</div>
+                        <div class="advantage-card-desc">Leave a request and your personal manager will answer all your
+                            questions
+                        </div>
+                        <div class="advantage-card-icon">
+                            <img alt="Join icon" height="58" src="./img/decor/join.svg" width="76">
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <span class="uk-button uk-button-secondary">Read more</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="uk-width-1-3@m uk-width-auto">
+                    <a class="advantage-card advantage-card-yellow" data-uk-toggle href="#modal-advertise">
+                        <div class="advantage-card-title">Advertise</div>
+                        <div class="advantage-card-desc">Attract players to Bitslot Casino and get up to 50% of the
+                            profit received!
+                        </div>
+                        <div class="advantage-card-icon">
+                            <img alt="Join icon" height="58" src="./img/decor/advertise.svg" width="76">
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <span class="uk-button uk-button-secondary">Read more</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="uk-width-1-3@m uk-width-auto">
+                    <a class="advantage-card advantage-card-orange" data-uk-toggle href="#modal-earn">
+                        <div class="advantage-card-title">Earn money</div>
+                        <div class="advantage-card-desc">Start earning from the first day of each month without
+                            transferring the minus to the next month
+                        </div>
+                        <div class="advantage-card-icon">
+                            <img alt="Join icon" height="58" src="./img/decor/earn.svg" width="76">
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <span class="uk-button uk-button-secondary">Read more</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="animated comission-section" id="commission">
+    <div class="uk-container">
+        <div class="section-heading animated">
+            <div class="uk-h2 uk-text-center">Amount of the&nbsp;partner commission</div>
+            <div class="section-desc">The amount of your commission will depend on the profit from the attracted players
+                in each month
+            </div>
+        </div>
+        <div class="chart animated">
+            <div class="chart-inner">
+                <div class="chart-switcher">
+                    <ul class="switcher"
+                        data-uk-switcher="animation: uk-animation-fade; connect: .chart-items; swiping: false;">
+                        <li class="tab1"><a href="#">EUR</a></li>
+                        <li class="tab2"><a href="#">BTC</a></li>
+                        <div class="switcher-indicator"></div>
+                    </ul>
+                </div>
+                <ul class="uk-switcher chart-items">
+                    <li>
+                        <picture>
+                            <source media="(max-width: 639px)" srcset="./img/chart-m.svg">
+                            <img alt="Chart" class="uk-width-1-1" height="369" src="./img/chart.svg" width="1103">
+                        </picture>
+                        <ul class="chart-legend">
+                            <li>
+                                <span class="uk-visible@m">Up to €5,000</span>
+                                <span class="uk-hidden@m">Up to €5k</span>
+                            </li>
+                            <li>
+                                <span class="uk-visible@m">From €5,000 to €10,000</span>
+                                <span class="uk-hidden@m">€5k - €10k</span>
+                            </li>
+                            <li>
+                                <span class="uk-visible@m">From €10,000 to €20,000</span>
+                                <span class="uk-hidden@m">€10k - €20k</span>
+                            </li>
+                            <li>
+                                <span class="uk-visible@m">More than €20,000</span>
+                                <span class="uk-hidden@m">More than €20k</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <picture>
+                            <source media="(max-width: 639px)" srcset="./img/chart-m.svg">
+                            <img alt="Chart" class="uk-width-1-1" height="369" src="./img/chart.svg" width="1103">
+                        </picture>
+                        <ul class="chart-legend">
+                            <li>
+                                <span>Up to 0,12 &#8383;</span>
+                            </li>
+                            <li>
+                                <span>0,12 &#8383; - 0,25 &#8383;</span>
+                            </li>
+                            <li>
+                                <span>0,25 &#8383; - 0,5 &#8383;</span>
+                            </li>
+                            <li>
+                                <span>More than 0,5 &#8383;</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-section uk-padding-remove-bottom animated" id="about">
+    <div class="uk-container">
+        <div class="section-heading animated">
+            <div class="uk-h2 uk-text-center uk-width-auto@s uk-width-5-6 uk-margin-auto">About our product</div>
+            <div class="section-desc">Bitslot is an online casino with guaranteed comfort and experience of playing in a
+                prestigious casino
+            </div>
+        </div>
+        <div class="animated" data-uk-grid="" data-uk-height-match="target: .card-product">
+            <div class="uk-width-1-2@m uk-position-relative card-link-effect">
+                <a class="card-product card-link" target="_blank" href="https://bitslot.io">
+                    <div>
+                        <div class="card-product-title">Product</div>
+                        <div class="card-product-desc">Slots, live dealer games, table games</div>
+                    </div>
+                    <span class="card-product-arrow">
+                        <img alt="Arrow" height="60" src="./img/icons/card-arrow.svg" width="60">
+                    </span>
+                </a>
+            </div>
+            <div class="uk-width-1-2@m">
+                <div class="card-product card-providers">
+                    <div class="card-product-title">Game providers
+                        <span><img alt="Tolltip" height="18" src="./img/icons/tooltip.svg" width="18"></span>
+                        <div class="tooltip-small" data-uk-drop="pos: right-justify">
+                            <div class="tooltip">
+                                <ul>
+                                    <div>1x2 Gaming, 4theplayer, Authentic Gaming, Amatic Industries, Avatar UX,
+                                        Booongo, BGaming (SoftSwiss), Blueprint, Belatra, BigTimeGaming, Booming Games,
+                                        Betsoft, Casino Technology, Evolution Gaming, EGT, Evoplay Entertainment,
+                                        Endorphina, ELK studio, Flat Dog Games, GameArt, Habanero, High 5 Gaming,
+                                        Hacksaw Gaming, iSoftBet, IronDog Studio, iGTech,Jade Rabbit, Kalamba, Lucky,
+                                        Lucky Streak, Push Gaming, Microgaming, Mascot, NetEnt, Net Game, Nolimit City,
+                                        Northern Lights, Pragmatic Play, Play’N GO, Platipus, Playtech, Playson, PGsoft,
+                                        Quickfire, Quickspin, Red Tiger, Reflex Gaming, Relax, Spinomenal, Thunderkick,
+                                        TrueLab, Wazdan, Yggdrasil
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-product-labels">
+                        <ul>
+                            <li>
+                                <span class="provider-label" style="background-color: #D2AA0A">1x2 Gaming</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #11B57A">4theplayer</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #A923B5">Authentic Gaming</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #DD1E1E">Amatic Industries</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #42CC2B">Avatar UX</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #20A4DC">Booongo</span>
+                            </li>
+                            <li>
+                                <span class="provider-label"
+                                      style="background-color: #8624E9">BGaming (SoftSwiss)</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #EC2964">Blueprint</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #D2820A">Belatra</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #20A4DC">BigTimeGaming</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #D2AA0A">Booming Games</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #11B57A">Betsoft</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #A923B5">Casino Technology</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #DD1E1E">Evolution Gaming</span>
+                            </li>
+                            <li>
+                                <span class="provider-label" style="background-color: #42CC2B">EGT</span>
+                            </li>
+                            <li>
+                                <span class="provider-label"
+                                      style="background-color: #20A4DC">Evoplay Entertainment</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-4@l uk-width-1-3@m">
+                <div class="card-product card-languages">
+                    <div class="card-product-title">Languages</div>
+                    <ul class="card-product-lang">
+                        <li>
+                            <img alt="English" height="12" src="./img/country/usa.svg" width="14">
+                            <span>English</span>
+                        </li>
+                        <li>
+                            <img alt="Russian" height="12" src="./img/country/russia.svg" width="14">
+                            <span>Russian</span>
+                        </li>
+                        <li>
+                            <img alt="French" height="12" src="./img/country/french.svg" width="14">
+                            <span>French</span>
+                        </li>
+                        <li>
+                            <img alt="Portuguese" height="12" src="./img/country/portugal.svg" width="14">
+                            <span>Portuguese</span>
+                        </li>
+                        <li>
+                            <img alt="Japanese" height="12" src="./img/country/japan.svg" width="14">
+                            <span>Japanese</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-width-3-4@l uk-width-2-3@m">
+                <div class="card-product card-payment">
+                    <div class="card-product-title">Payment methods</div>
+                    <div class="uk-child-width-1-2@m" data-uk-grid="">
+                        <div>
+                            <div class="uk-h3">Deposit</div>
+                            <div>Coinspaid (Bitcoin, Litecoin,
+                                Bitcoin Cash, Etherum, Dogecoin, Tether)
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-h3">Payment</div>
+                            <div>Coinspaid (Bitcoin, Litecoin,
+                                Bitcoin Cash, Etherum, Dogecoin, Tether)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-1">
+                <div class="card-product card-currencies">
+                    <div class="card-product-title">Available currencies</div>
+                    <div class="card-product-currency">
+                        <div class="uk-child-width-auto uk-grid-small" data-uk-grid="margin: mt10">
+                            <div>
+                                <div class="provider-label" style="background-color: #F7931A">
+                                    <img alt="Bitcoin" height="18" src="./img/currencies/btc.svg" width="18">
+                                    <div>Bitcoin</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="provider-label" style="background-color: #345D9D">
+                                    <img alt="Litecoin" height="18" src="./img/currencies/ltc.svg" width="18">
+                                    <div>Litecoin</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="provider-label" style="background-color: #8DC351">
+                                    <img alt="Bitcoin Cash" height="18" src="./img/currencies/btc-cash.svg" width="18">
+                                    <div>Bitcoin Cash</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="provider-label" style="background-color: #6D6D6D">
+                                    <img alt="Ethereum" height="18" src="./img/currencies/ethereum.svg" width="18">
+                                    <div>Ethereum</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="provider-label" style="background-color: #D2AA0A">
+                                    <img alt="Dogecoin" height="18" src="./img/currencies/doge.svg" width="18">
+                                    <div>Dogecoin</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="provider-label" style="background-color: #53AE94">
+                                    <img alt="Tether" height="18" src="./img/currencies/tether.svg" width="18">
+                                    <div>Tether</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-section uk-padding-remove-bottom animated" id="faq">
+    <div class="uk-container">
+        <div class="section-heading animated">
+            <div class="uk-h2 uk-text-center">FAQ</div>
+            <div class="section-desc">Answers to the most frequently asked questions</div>
+        </div>
+        <div class="switcher-wrap">
+            <ul class="switcher"
+                data-uk-switcher="animation: uk-animation-fade; connect: .faq-items; swiping: false;">
+                <li class="tab1"><a href="#">Getting Started</a></li>
+                <li class="tab2"><a href="#">Partner Commission</a></li>
+                <div class="switcher-indicator"></div>
+            </ul>
+        </div>
+        <ul class="uk-switcher faq-items">
+            <li>
+                <div class="animated" data-uk-margin="margin: mt20">
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-item-title">What is the BPartners affiliate program?</div>
+                            <div class="faq-item-desc">Our affiliate program gives you the opportunity to earn money
+                                every month simply for attracting new players to our casino.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-item-title">How much does it cost to join the program?</div>
+                            <div class="faq-item-desc">Our program is absolutely free for all users.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-item-title">Can I become a partner if I don't have a website?</div>
+                            <div class="faq-item-desc">Sure. We can provide all the necessary advertising materials and
+                                tools for promoting Bpartners in any way convenient for you, both online and offline.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-item-title">How to become a partner?</div>
+                            <div class="faq-item-desc">To become a Bpartner partner and start earning right now, you
+                                just need to register on the affiliate program website. The affiliate link and reports
+                                will be available immediately after activating the account.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="animated" data-uk-margin="margin: mt20">
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-item-title">What kind of affiliate commission do you offer?</div>
+                            <div class="faq-item-desc">We offer one of the highest commission rates in the industry - up
+                                to 50% of the profit earned each month.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-item-title">How can I find out how much I have earned?</div>
+                            <div class="faq-item-desc">Every time a player goes to the BPartners website using your
+                                affiliate link or banner, a cookie is stored on his computer.
+                                When a player registers on the site, the corresponding unique code is determined in the
+                                system, and the player's account is assigned to your partner profile. Now you will
+                                receive a percentage of the profit depending on the activity of this player in the
+                                casino.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-item-title">How is the commission calculated?</div>
+                            <div class="faq-item-desc">The affiliate commission is a fixed percentage of the net gaming
+                                profit. The net gaming profit consists of the amount of bets, winnings and bonuses + an
+                                administrative fee
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-item-title">What is the minimum amount for the withdrawal of the
+                                commission?
+                            </div>
+                            <div class="faq-item-desc">Yes, the minimum withdrawal amount for partners is 0.00045 BTC or
+                                €20. If the earnings for the month turned out to be less than this amount, then it will
+                                simply remain in the system and will be transferred to the next month. And so until a
+                                sufficient amount is accumulated for the payment.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-item-title">How often will I be paid?</div>
+                            <div class="faq-item-desc">The partner commission is credited to the account once a month,
+                                until the 5th day of each month.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="faq-item">
+                            <div class="faq-item-title">Can I attract myself?</div>
+                            <div class="faq-item-desc">No, it is forbidden to participate in our affiliate program in
+                                this way. To receive an affiliate commission, you need to attract at least 3 active
+                                players.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="uk-section section-contact animated" id="contacts">
+    <div id="questionApp" class="uk-container uk-container-small">
+        <div class="section-heading">
+            <div class="uk-h2 uk-text-center">Any questions?</div>
+            <div class="section-desc">Great! We have the answers:</div>
+            <a href="mailto:affiliates@bitslot.io" class="section-desc">affiliates@bitslot.io</a>
+        </div>
+
+            <div class="uk-width-1-1 uk-margin-large-top uk-text-center">
+                <a href="mailto:affiliates@bitslot.io" class="uk-button uk-button-primary uk-width-auto@m uk-width-1-1">Send</a>
+            </div>
+            
+    </div>
+</div>
+</main>
+<footer class="footer">
+    <div class="uk-container">
+        <div data-uk-grid="margin: mt12">
+            <div class="uk-width-1-1 uk-hidden@m">
+                <div class="logotype"><span>B</span><span>Partners</span></div>
+            </div>
+            <div class="uk-width-auto@m uk-flex uk-flex-right@m uk-flex-center">
+                <div>&copy; BPartners, <span id="footer-year">2021</span></div>
+            </div>
+            <div class="uk-width-expand@m uk-flex uk-flex-right@m uk-flex-center">
+                <a href="#modal-terms" data-uk-toggle>Terms and Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="menu" data-uk-offcanvas="mode: slide; overlay: true; flip: true;">
+    <div class="uk-offcanvas-bar offcanvas uk-flex-between">
+        <div>
+            <div class="offcanvas-head">
+                <div>
+                    <a href="/">
+                        <div class="logotype"><span>B</span><span>Partners</span></div>
+                    </a>
+                </div>
+                <div class="uk-flex uk-flex-middle">
+                    <a class="offcanvas-close" href="#menu" data-uk-toggle>
+                        <img width="16" height="16" src="./img/icons/close.svg" data-uk-svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li><a data-text="Commission" href="#commission" data-uk-scroll>Commission</a></li>
+                <li><a data-text="About our product" href="#about" data-uk-scroll>About our product</a></li>
+                <li><a data-text="FAQ" href="#faq" data-uk-scroll>FAQ</a></li>
+                <li><a data-text="Contacts" href="#contacts" data-uk-scroll>Contacts</a></li>
+            </ul>
+            <div>
+                <div class="mb30 uk-text-center">
+                    <a class="uk-button uk-button-secondary" href="#modal-login" data-uk-toggle>Log in</a>
+                </div>
+                <div class="uk-text-center">
+                    <a class="uk-button uk-button-primary" href="#modal-register" data-uk-toggle>Get started</a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-footer">
+
+        </div>
+    </div>
+</div>
+
+<div data-uk-modal id="modal-terms">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-custom">
+        <div class="modal-head">
+            <div class="modal-title">Join the affiliate program</div>
+        </div>
+        <div class="modal-body">
+            <div class="modal-overflow uk-margin-remove-last-child uk-text-center">
+            <h3><strong>AFFILIATE TERMS &amp; CONDITIONS</strong></h3>
+            <h3><strong>VERSION 1. EFFECTIVE FROM 30.08.2021 AND LAST UPDATED 30.08.2021.</strong></h3>
+            <p>This is an agreement (“The Affiliate Agreement”) between you (“you” or “Affiliate”) and bpartners.io (&quot;COMPANY”, “we”, “our”, “us”, “Affiliate Program” ) .</p>
+            <p>By registering for the Affiliate Program, and by accessing and using any of our marketing tools or accepting any reward, bonus or commission, whether contained in the Affiliate Agreement or elsewhere as a part of our Affiliate Program, you will be deemed to have read, understood and agreed to the Affiliate Agreement.</p>
+            <p>We may periodically make modifications to this Agreement. While we will do our best to notify you of such changes, we recommend that you revisit this page regularly. Your continued use of the Affiliate Program will constitute your consent to the updated Agreement.</p>
+            <h3>1.DEFINITIONS</h3>
+            <p>1.1 “Affiliate” means you, the person or entity, who applies to participate in the Affiliate Program.</p>
+            <p>1.2 “Affiliate Account” means the account of the Affiliate set up after an Affiliate Application is made by the Affiliate to take part in the Affiliate Program and approved by Company.</p>
+            <p>1.3“Affiliate Agreement” means (i) all the terms and conditions set out in this document, (ii) the terms and conditions of the Commission Structures applicable to the different products and brands, and (iii) any other rules or guidelines of the Company and/or Websites made known to the Affiliate from time to time.</p>
+            <p>1.4“Affiliate Application” means the application made by the Affiliate to participate in the Affiliate Program.</p>
+            <p>1.5“Affiliate Links” means internet hyperlinks used by the Affiliate to link from the Affiliate Website(s) or any other any third party website to Company Websites.</p>
+            <p>1.6“Affiliate Program” means collaboration between the Company and the Affiliate whereby the Affiliate promotes the Company’s websites and creates Affiliate Links from the Affiliate Website(s) to Company’s websites. For such services the Affiliate is paid a commission depending on the generated traffic to the Company’s websites, subject to terms within this Affiliate Agreement and to the applicable product-specific Commission Structure.</p>
+            <p>1.7 “Affiliate Wallet” means an online wallet in the name of the Affiliate into which Company pays the commission and any other payments due to the Affiliate, which the Affiliate can withdraw in accordance with the Affiliate Agreement;</p>
+            <p>1.8 “Affiliate Website” means any website which is maintained, operated or otherwise controlled by the Affiliate.</p>
+            <p>1.9 “Company” shall mean <a href="http://bpartners.io">http://bpartners.io</a> and any other company within our group, including our parent companies, their parent companies and all of the subsidiaries of these respective companies.</p>
+            <p>1.10 “Company Websites” means the website <a href="http://bpartners.io">http://bpartners.io</a> or other such websites (including mirror websites) as may be added to this Affiliate Program from time to time, operated by Dama N.V.;</p>
+            <p>1.11 “Commission” means the percentage of the Net Gaming Revenue, or, where applicable, a fixed amount for a New Customer (CPA structure) as set out in the Commission Structures.</p>
+            <p>1.12 “Commission Structures” means any specific reward structures expressly agreed between Company and the Affiliate.</p>
+            <p>1.13 “Confidential Information” means any information of commercial or essential value relating to Company such as, but not limited to, financial reports, trade secrets, know-how, prices and custom quotes, business information, products, strategies, databases, technology, information about New Customers, other customers and users of Company Websites, marketing plans and manners of operation.</p>
+            <p>1.14 “Intellectual Property Rights” means any copyrights, trademarks, service marks, domain names, brands, business names, and registrations of the aforesaid and/or any other similar rights of this nature.</p>
+            <p>1.15 “Net Gaming Revenue” or “NGR” means all monies received by Company from New Customers as placed bets, less (a) winnings returned to New Customers, (b) issued bonuses, (c) net balance corrections, (d) administration fees, (e) fraud costs and chargebacks. For the avoidance of doubt, all Net Gaming Revenue amounts mentioned above are only related to New Customers referred to Company Websites by the Affiliate Website(s).</p>
+            <p>1.16 “New Customer” means a new, first-time customer of the Company who made a first deposit amounting to at least the applicable minimum deposit at Company Websites’ player account, in accordance with the applicable terms and conditions of Company Websites’. This excludes the Affiliate, its employees, relatives and friends.</p>
+            <p>1.17 “Parties” means Company and the Affiliate (each a “Party”).</p>
+            <p>1.18 “Personal Data” means any information relating to any person, whether individual or legal that is or may be identified, directly or indirectly.</p>
+            <h3>2. AFFILIATE OBLIGATIONS</h3>
+            <h3>2.1 Registering as Affiliate</h3>
+            <p>To become a member of our Affiliate Program you must accept these terms and conditions by ticking the respective box while submitting the Affiliate Application. The Affiliate Application will form an integral part of the Affiliate Agreement.</p>
+            <p>We will, at our sole discretion, determine whether or not to accept an Affiliate Application and our decision is final and not subject to any right of appeal. We will notify you by email as to whether or not your Affiliate Application has been successful.</p>
+            <p>You will provide any documentation required by Company to verify the Affiliate Application and to verify the Affiliate Account information at any time during the term of the Affiliate Agreement. This documentation may include but is not limited to: bank statements, individual or corporate identity papers and proof of address.</p>
+            <p>It is your sole obligation to ensure that any information you provide us with when registering with the Affiliate Program is correct and that such information is kept up-to-date at all times.</p>
+            <h3>2.2 Affiliate login details</h3>
+            <p>It is your sole obligation and responsibility to ensure that login details for your Affiliate Account are kept confidential and secure at all times.</p>
+            <p>Any unauthorised use of your Affiliate Account resulting from your failure to adequately guard your login information shall be your sole responsibility, and you remain solely responsible and liable for all such activity occurring under your Affiliate Account user ID and password (whether such activity was undertaken by you or not). It is your obligation to inform us immediately if you suspect illegal or unauthorised use of your Affiliate Account.</p>
+            <h3>2.3 Affiliate Program participation</h3>
+            <p>The Affiliate Program is intended for your direct participation. Opening an Affiliate Account for a third party, brokering or transfering an Affiliate Account is not accepted. Affiliates wishing to transfer an account to another beneficial owner must contact us and request permission. Besides, you shall not open more than one Affiliate Account without our prior written consent.</p>
+            <p>By agreeing to participate in the Affiliate Program, you agree to use your best efforts to actively advertise, market and promote the Company Websites in accordance with the Affiliate Agreement and Company’s instructions from time to time. You will ensure that all activities taken by you under the Affiliate Agreement will be in Company’s best interest and will in no way harm the Company’s reputation or goodwill.</p>
+            <p>You may link to the Company Website’s using the Affiliate Links or other such materials as we may from time to time approve. This is the only method by which you may advertise on our behalf.</p>
+            <h3>2.4 Affiliate Website</h3>
+            <p>You will be solely responsible for the development, operation and maintenance of the Affiliate Website and for all materials that appear on the Affiliate Website. You shall at all times ensure that the Affiliate Website is compliant with all applicable laws, including General Data Protection Regulation (GDPR), and functions as a professional website.</p>
+            <p>You will not present the Affiliate Website in such a way so that it may cause confusion with the Company Websites, or so that it may give the impression that it is owned or operated by Company.</p>
+            <p>The Affiliate Website will not contain any defamatory, libellous, discriminatory or otherwise unsuitable content (including, but not limited to, violent, obscene, derogatory or pornographic materials or content which would be unlawful in target country).</p>
+            <h3>2.5 Valid traffic and good faith</h3>
+            <p>You will not generate traffic to Company Websites by registering as a New Customer whether directly or indirectly (for example by using associates, family members or other third parties). Such behaviour shall be deemed as fraud.</p>
+            <p>You will also not attempt to benefit from traffic not generated in good faith. If you have any reasonable suspicion that any New Customer referred by you is in any way associated to bonus abuse, money laundering, fraud, or other abuse of remote gaming websites, you will immediately notify us of this.</p>
+            <p>You hereby recognise that any New Customer found to be a bonus abuser, money launderer or fraudster or who assists in any form of affiliate fraud (whether notified by you or later discovered by us) does not count as a valid New Customer under the Affiliate Agreement, and thereby no Commission shall be payable in relation to such New Customers.</p>
+            <h3>2.6 Unsuitable websites</h3>
+            <p>You will not use any Affiliate Links or otherwise place any digital advertisements whatsoever featuring our Intellectual Property on any unsuitable websites (whether owned by a third party or otherwise).</p>
+            <p>Unsuitable websites include, but are not limited to, websites that are aimed at children, display illegal pornography or other illegal sexual acts, promote violence, promote discrimination based on race, sex, religion, nationality, disability, sexual orientation, or age, promote illegal activities or in any way violate the intellectual property rights of any third party or of the Company, or breach any relevant advertising regulations or codes of practice in any territory where such Affiliate Links or digital advertisements may be featured.</p>
+            <h3>2.7 Affiliate Links</h3>
+            <p>The Affiliate Links shall be displayed at least as prominently as any other sales link on the Affiliate Website.</p>
+            <p>You will only use Affiliate Links provided by Company within the scope of the Affiliate Program. Masking your Affiliate Links (for example hiding the source of the traffic sent to Company’s Websites) is also prohibited.</p>
+            <h3>2.8 Email and SMS marketing</h3>
+            <p>If sending any emails or SMS communications to individuals which (i) include any of Company’s Intellectual Property Rights; or (ii) otherwise intend to promote Company Websites, you must first obtain our permission to send such emails.</p>
+            <p>If such permission is granted by the Company, you must then ensure you have each and every recipient’s explicit consent to receive marketing communications in the form of communication to be sent (i.e. by SMS or email) and that such individuals have not opted out of receiving such communication. You must also make it clear to the recipient that all marketing communications are sent from you and are not from our Company.</p>
+            <h3>2.9 Use of Company Intellectual Property Rights</h3>
+            <p>Any use of Company’s Intellectual Property Rights must be in accordance with any brand guidelines issued to you from time to time and are always subject to the approval required in clause below.</p>
+            <p>You will not register domain names, as well as search terms or other identifiers for use in any search engine, portal, app store, sponsored advertising service or other referral service which are identical to any of the Company’s trademarks or otherwise include the Company trademarks.</p>
+            <h3>2.10 Approved creative</h3>
+            <p>You will not use any advertising layout or creative (including banners, images, logos) incorporating our Intellectual Property Rights unless the advertising layout or creative was provided to you by the Company or (if advertising layouts are created by you) without the advance written approval of Company. You will not modify the appearance of any advertising that has been provided to you or for which approval was granted.</p>
+            <p>It is your responsibility to seek approval from Company in time for launch of any advertising campaign or creative, to ensure you have written approval from the Company in relation to advertising, and to be able to evidence such approval upon request.</p>
+            <h3>2.11 Loyalty Programs</h3>
+            <p>You will not offer any cash-back / value-back or similar programs, other than such programs as are offered on the Company Websites.</p>
+            <h3>2.12 Responsible Gaming</h3>
+            <p>The Company has ongoing commitment to responsible gaming and prevention of gambling addiction. You agree to actively cooperate with the Company to convey a responsible gaming message. Specifically, you will not use any material or in any way target persons who are under 18 or the legal gambling age in their jurisdiction.</p>
+            <h3>2.13 Illegal activity</h3>
+            <p>You will not target any territory or jurisdictions where gambling is illegal. You will act within the relevant and / or applicable law at all times and you will not perform any act which is illegal in relation to the Affiliate Program or otherwise.</p>
+            <p>The Affiliate acknowledges that promoting on Swedish market resources and using Swedish language is subject to legal restrictions in Sweden. Such actions will be considered as a breach of general terms &amp; conditions and will lead to the immediate account closure if disclosed.</p>
+            <h3>2.14 Data Protection and Cookies</h3>
+            <p>You shall at all times comply with the General Data Protection Regulation (GDPR) and any existing or new data protection acts, regulations or law applicable to your territory. This includes all applicable legislation and/or regulations relating to the use of ‘cookies’.</p>
+            <h3>2.15 Cost and expense</h3>
+            <p>You shall be solely responsible for all risk, costs and expenses incurred by you in meeting your obligations under the Affiliate Agreement.</p>
+            <h3>2.16 Company monitoring of Affiliate activity</h3>
+            <p>You will immediately give Company all such assistance as is required and provide us with all such information as is requested by Company to monitor your activity under the Affiliate Program.</p>
+            <h3>2.17 Commissions paid incorrectly</h3>
+            <p>The Affiliate agrees to immediately upon request by Company, return all Commissions received based on New Customers referred to Company in breach of the Affiliate Agreement or relating to fraudulent or falsified transactions.</p>
+            <h3>3. AFFILIATE RIGHTS</h3>
+            <h3>3.1. Right to direct New Customers</h3>
+            <p>We grant you the non-exclusive, non-assignable, right, during the term of this Affiliate Agreement, to direct New Customers to such Company Websites as we have agreed with you in strict accordance with the terms of the Affiliate Agreement. You shall have no claim to Commission or other compensation on business secured by persons or entities other than you.</p>
+            <h3>3.2. Licence to use Company Intellectual Property Rights</h3>
+            <p>We grant to you a non-exclusive, non-transferable licence, during the term of this Affiliate Agreement, to use the Company Intellectual Property Rights, which we may from time to time approve solely in connection with the display of the promotional materials on the Affiliate Website or in other such locations as may have been expressly approved (in writing) by Company. This licence cannot be sub-licensed, assigned or otherwise transferred by you.</p>
+            <h3>3.3. Players’ Personal Data</h3>
+            <p>For the purpose of the services delivered under this Agreement, it is understood that the Affiliate shall not have access to any Personal Data of Company’s customers.</p>
+            <h3>4. COMPANY OBLIGATIONS</h3>
+            <p>4.1. We shall use our best efforts to provide you with all materials and information required for necessary implementation of the Affiliate Links.</p>
+            <p>4.2. At our sole discretion, we will register any New Customers directed to the Company Websites by you and we will track their transactions. We reserve the right to refuse New Customers (or to close their accounts) if necessary to comply with any requirements we may periodically establish.</p>
+            <p>4.3. We shall make available monitoring tools which enable you to monitor your Affiliate Account and the level of your Commission and the payment thereof.</p>
+            <p>4.4. We shall use and process the following personal data of an Affiliate or any Affiliate employee, as follows: your username for logging in, your email address, name, date of birth, your country and address, telephone number and financial data for the purposes of ensuring a high level of security, fulfilling the AML legal requirements and for managing our business relationship.</p>
+            <p>4.5. Subject to your strict adherence to the Affiliate Agreement, we shall pay you the Commission in accordance with Clause 6.</p>
+            <h3>5. COMPANY RIGHTS AND REMEDIES</h3>
+            <p>In the case of your breach (or, where relevant, suspected breach) of this Agreement or your negligence in performance under the Affiliate Program, or failure to meet your obligations hereunder, the Company shall have the following remedies available:</p>
+            <p>a) the right to suspend your participation in the Affiliate Program for the period required to investigate any activities that may be in breach of the Affiliate Agreement. During such period of suspension payment of Commissions will also be suspended;</p>
+            <p>b) the right to withhold any Commission or any other payment to the Affiliate arising from or relating to any specific campaign, traffic, content or activity conducted or created by the Affiliate which is in breach of the Affiliate’s obligations under the Affiliate Agreement;</p>
+            <p>c) the right to withhold from the Commission monies which Company deems reasonable to cover any indemnity given by the Affiliate hereunder or to cover any liability of Company which arises as a result of the Affiliate’s breach of the Affiliate Agreement;</p>
+            <p>d) immediately terminate the Affiliate Agreement;</p>
+            <p>e) the right to withhold monies held in the Affiliate Wallet if they are not withdrawn within a period of 3 (three) months from the date of the termination of the Affiliate Agreement in accordance with clause 9.1.</p>
+            <p>Our rights and remedies detailed above shall not be mutually exclusive.</p>
+            <h3>6. COMMISSION AND PAYMENT</h3>
+            <p>6.1. Subject to your adherence to the provisions of the Affiliate Agreement, you will earn Commission in accordance with the Commission Structure. We retain the right to change the Commission percentage and method of calculation of Commission in accordance with this clause.</p>
+            <p>6.2 The Commission is calculated at the end of each month and payments shall be made on a monthly basis in arrears, not later than the 10th of the following calendar month.</p>
+            <p>6.3. Payment of Commission will be made through our Affiliate Wallet. Due to existing regulations, Affiliates may be required for verification and “know your customer” documentation before a withdrawal can be accessed.</p>
+            <p>6.4. A minimum amount of €20 (twenty euro) may be withdrawn from the Affiliate Wallet at one time.</p>
+            <p>6.5. If an error is made in the calculation of the Commission, the Company has the right to correct such calculation at any time and will immediately pay out underpayment or reclaim overpayment made to the Affiliate.</p>
+            <p>6.6. The Affiliate may, at the Company’s sole discretion, be provided with the opportunity to restructure its commission structure.</p>
+            <p>6.7. The Affiliate’s acceptance of a Commission payment shall constitute the full and final settlement of the balance due for the relevant period. In case the Affiliate disagrees with the balance due as reported, he or she shall notify the Company within fourteen (14) calendar days and clearly state reasons of the disagreement. Failure to notify the Company within this time limit shall be considered as an irrevocable acknowledgment of the balance due for the relevant period.</p>
+            <p>6.8. The Commission shall be deemed to be exclusive of value added tax or any other applicable tax. The Affiliate shall have the sole responsibility to pay any and all taxes, levies, charges and any other money payable or due to any tax authority, department or other competent entity as a result of the compensation generated under the Affiliate Agreement.</p>
+            <p>6.9. The Affiliate’s commission doesn’t convert to any fiat currency. The Affiliate’s commission is paid exceptionally once a month in cryptocurrency (BTC, USDT TRC20, USDT ERC20) without any re-count.</p>
+            <h3>7. STANDARD COMMISSION STRUCTURES</h3>
+            <p>STANDARD COMMISSION PLAN GOES HERE
+            e.g.
+            35% of NGR, if monthly NGR is equal or below 5,000 EUR;
+            40% of NGR, if monthly NGR is between 5,000 EUR and 10,000 EUR;
+            45% of NGR, if monthly NGR is between 10,000 EUR and 20,000 EUR;
+            50% of NGR, if monthly NGR is equal or more than 20,000 EUR 
+            No Negative Carryover</p>
+            <h3>8. CONFIDENTIAL INFORMATION</h3>
+            <p>During the term of the Affiliate Agreement, you may from time to time be entrusted with confidential information relating to our business, operations, or underlying technology and/or the Affiliate Program (including, for example, the Commissions earned by you under the Affiliate Program).</p>
+            <p>You agree to avoid disclosure or unauthorised use of any such confidential information to third persons or outside parties unless you have our prior written consent. You also agree that you will use the confidential information only for the purposes of the Affiliate Agreement. Your obligations in regards to this clause survive the termination of this Agreement.</p>
+            <p>In addition, you must not issue any press release or similar communication to the public with respect to your participation in the Affiliate Program without the prior written consent of the Company (with approval of the exact content to also be approved by Company).</p>
+            <h3>9. TERM AND TERMINATION</h3>
+            <h3>9.1. Term</h3>
+            <p>The term of the Affiliate Agreement will begin when you are approved as an Affiliate and will be continuous unless and until either Party notifies the other in writing that it wishes to terminate the Agreement. In this case the Agreement will be terminated 30 days after such notice is given. For purposes of notification of termination, delivery via e-mail is considered a written and immediate form of notification.</p>
+            <p>For the avoidance of doubt, Company may also terminate (in accordance with Clause 5 above) upon immediate notice at any time for the Affiliates failure to meet their obligations under the Agreement or otherwise for the Affiliate’s negligence.</p>
+            <p>9.2. Affiliate actions upon termination
+            Upon termination you must immediately remove all of Company banners or creatives from the Affiliate Website and disable all Affiliate Links from the Affiliate Website to all Company Websites.</p>
+            <p>All rights and licenses given to you in the Affiliate Agreement shall immediately terminate.</p>
+            <p>You will return to Company any confidential information and all copies of it in your possession and control, and will cease all uses of all Company Intellectual Property Rights.</p>
+            <h3>9.3. Commission</h3>
+            <p>Upon termination of the Affiliate Agreement for any reason, all Commission relating to any New Customers directed to Company during the term shall not be payable to the Affiliate as from the date of termination.</p>
+            <h3>10. MISCELLANEOUS</h3>
+            <h3>10.1. Disclaimer</h3>
+            <p>We make no express or implied warranties or representations with respect to the Affiliate Program, about Company or the Commission payment arrangements (including, without limitation, functionality, warranties of fitness, merchantability, legality or non-infringement). In addition, we make no representation that the operation of our sites will be uninterrupted or error-free and will not be liable for the consequences if there are any. In the event of a discrepancy between the reports offered in the Affiliate Account system and the Company database, the database shall be deemed accurate.</p>
+            <h3>10.2. Indemnity and Limitation of Liability</h3>
+            <p>You shall indemnify and hold Company, our directors, employees and representatives harmless from and against any and all liabilities, losses, damages and costs, including legal fees, resulting from or in any way connected with (a) any breach by you of any provision of the Affiliate Agreement, (b) the performance of your duties and obligations under the Affiliate Agreement, (c) your negligence or (d) any injury caused directly or indirectly by your negligent or intentional acts or omissions, or the unauthorised use of our creatives and links or this Affiliate Program.</p>
+            <p>The Company shall not be held liable for any direct or indirect, special, or consequential damages (or any loss of revenue, profits, or data), any loss of goodwill or reputation arising in connection with the Affiliate Agreement or the Affiliate Program, even if we have been advised of the possibility of such damages.</p>
+            <h3>10.3. Non-Waiver</h3>
+            <p>Our failure to enforce your strict performance of any provision of the Affiliate Agreement will not constitute a waiver of our right to subsequently enforce such provision or any other provision of the Affiliate Agreement.</p>
+            <h3>10.4. Relationship of Parties</h3>
+            <p>The Company and the Affiliate are independent contractors and nothing in the Affiliate Agreement will create any partnership, joint venture, agency, franchise, sales representative, or employment relationship between us. You will have no authority to make or accept any offers or representations on our behalf. You will not make any statement, whether on your site or otherwise, that would contradict anything in this Affiliate Agreement.</p>
+            <h3>10.5. Force Majeure</h3>
+            <p>Neither party shall be liable to the other for any delay or failure to perform its obligations under the Affiliate Agreement if such delay or failure arises from a cause beyond its reasonable control, including but not limited to labour disputes, strikes, industrial disturbances, acts of God, acts of terrorism, floods, lightning, utility or communications failures, earthquakes or other casualty. If such event occurs, the non-performing Party is excused from whatever performance is prevented by the event to the extent prevented provided that if the force majeure event subsists for a period exceeding thirty (30) calendar days then either Party may terminate the Affiliate Agreement with immediate effect by providing a written notice.</p>
+            <h3>10.6. Assignability</h3>
+            <p>You may not assign the Affiliate Agreement, by operation of law or otherwise, without our prior written consent.</p>
+            <h3>10.7. Severability</h3>
+            <p>If any provision of the Affiliate Agreement is held to be invalid, illegal or unenforceable in any respect, such provision will be ineffective only to the extent of such invalidity, or unenforceability, without invalidating the remainder of the Affiliate Agreement or any provision hereof.</p>
+            <h3>10.8. English language</h3>
+            <p>The Affiliate Agreement was first drafted in English. Should there be any conflict or discrepancy between the English language version and any other language, the English version shall prevail.</p>
+            <h3>10.9. Modification of Terms &amp; Conditions</h3>
+            <p>We may modify any of the terms and conditions contained in the Affiliate Agreement or replace it at any time and in our sole discretion by posting a change notice or a new agreement on our site. Modifications may include, for example, changes in the scope of available Commissions and Affiliate Program rules.</p>
+            <p>If any modification is unacceptable to you, your need to terminate the Affiliate Agreement. Your continued participation in our Affiliate Program following our posting of a change notice or new agreement will constitute binding acceptance of the modification or of the new agreement.</p>
+            
+        </div>
+        </div>
+    </div>
+</div>
+
+<div id="app">
+    <div data-uk-modal id="modal-register">
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-login">
+            <div class="uk-flex uk-flex-right uk-margin-bottom">
+                <a href="#" class="uk-modal-close">
+                    <img width="14" height="14" src="./img/icons/close.svg" alt="Close">
+                </a>
+            </div>
+            <div class="modal-head">
+                <div class="modal-title uk-text-center">Sign up</div>
+            </div>
+            <div class="modal-body">
+                <form data-vv-scope="firstForm" v-on:submit.prevent="onSubmitFirst" name="firstSignupModal" action="#">
+                    <div class="mb20 uk-position-relative">
+                        <div v-bind:class="{'open': isOpened}" class="form-select custom-select-wrapper">
+                            <input v-validate="'required|min:3'" v-model="firstForm.selectedContact" name="contact-select" type="hidden">
+                            <div class="custom-select-field" v-on:click="open">
+                                <div class="custom-select-value">{{ firstForm.selectedContact ? firstForm.selectedContact : 'How can we contact you?' }}</div>
+                                <div class="custom-select-arrow">
+                                    <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 2L10 8L18 2" stroke="white" stroke-width="2.74" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="custom-select-options">
+                                <ul>
+                                    <li v-bind:class="{'selected': firstForm.selectedContact == ''}" v-on:click="selectMethod()">How can we contact you?</li>
+                                    <li v-bind:class="{'selected': firstForm.selectedContact == 'Telegram'}" v-on:click="selectMethod('Telegram')">Telegram</li>
+                                    <li v-bind:class="{'selected': firstForm.selectedContact == 'Skype'}" v-on:click="selectMethod('Skype')">Skype</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        v-bind:class="{'uk-hidden': !firstForm.selectedContact, 'form-error': errors.has('firstForm.contactField')}"
+                        class="mb32 uk-position-relative"
+                    >
+                        <input name="contactField" v-model="firstForm.contactField" v-validate="'required'" class="uk-input" type="text">
+                        <span v-if="errors.has('firstForm.contactField')" class="form-error-text">The field is empty</span>
+                    </div>
+    <!--                 
+                    <div class="mb20 uk-position-relative form-error">
+                        <input class="uk-input" type="email" name="email" placeholder="Email address">
+                        <span class="form-error-text">The field is empty</span>
+                    </div> -->
+                    <div
+                        class="mb32 uk-position-relative"
+                        v-bind:class="{'form-error': errors.has('firstForm.promotion')}"
+                    >
+                        <textarea v-validate="'required'" v-model="firstForm.promotion" class="uk-textarea" name="promotion" rows="3" placeholder="Where are you planning to promote Bitslot?"></textarea>
+                        <span v-if="errors.has('firstForm.promotion')" class="form-error-text">The field is empty</span>
+                    </div>
+                    <div class="mb32 uk-flex uk-flex-center">
+                        <label class="check">
+                            <input v-model="firstForm.agreeReceiveNews" type="checkbox" name="register-agree" class="checkbox">
+                            <span>I would like to receive important <br> news from BPartners</a></span>
+                        </label>
+                    </div>
+                    <div class="mb20 uk-flex uk-flex-center">
+                        <!--    Если отключено добавить класс uk-disabled  -->
+                        <button class="uk-button uk-button-primary">
+                            Continue
+                        </button>
+                    </div>
+                    <div class="uk-text-center">
+                        <a class="modal-link" href="#modal-login" data-uk-toggle>Already a member? <span>Login</span></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div data-uk-modal id="modal-login-info">
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-login">
+            <div class="uk-flex uk-flex-right uk-margin-bottom">
+                <a href="#" class="uk-modal-close">
+                    <img width="14" height="14" src="./img/icons/close.svg" alt="Close">
+                </a>
+            </div>
+            <div class="modal-head">
+                <div class="modal-title uk-text-center">Login Information</div>
+            </div>
+            <div class="modal-body">
+                <form data-vv-scope="secondForm" v-on:submit.prevent="onSubmitSecond" action="#">
+                    <div
+                        class="mb20 uk-position-relative"
+                        v-bind:class="{'form-error': errors.has('secondForm.email')}"
+                    >
+                        <input
+                            v-model="secondForm.email"
+                            v-validate="'required|email'"
+                            class="uk-input"
+                            type="email"
+                            name="email"
+                            placeholder="Email address"
+                        >
+                        <span class="form-error-text">{{ errors.first('secondForm.email') }}</span>
+                    </div>
+                    <div
+                        class="mb20 uk-position-relative"
+                        v-bind:class="{'form-error': errors.has('secondForm.password')}"
+                    >
+                        <input
+                            v-model="secondForm.password"
+                            v-validate="'required|min:8'"
+                            class="uk-input"
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            ref="password"
+                        >
+                        <span class="form-error-text">{{ errors.first('secondForm.password') }}</span>
+                    </div>
+                    <div
+                        class="mb32 uk-position-relative"
+                        v-bind:class="{'form-error': errors.has('secondForm.password_confirmation')}"
+                    >
+                        <input
+                            v-model="secondForm.password_confirmation"
+                            v-validate="'required|confirmed:password'"
+                            class="uk-input"
+                            type="password"
+                            name="password_confirmation"
+                            placeholder="Repeat the password"
+                        >
+                        <span class="form-error-text">{{ errors.first('secondForm.password_confirmation') }}</span>
+                    </div>
+                    <div class="mb32 uk-flex uk-flex-center">
+                        <label class="check">
+                            <input type="checkbox" name="login-info-agree" class="checkbox" required>
+                            <span>Agree to the <a class="uk-link" href="#modal-terms" data-uk-toggle>Terms & Conditions</a></span>
+                        </label>
+                    </div>
+                    <div class="uk-flex uk-flex-center">
+                        <!--    Если отключено добавить класс uk-disabled  -->
+                        <button class="uk-button uk-button-primary" href="#">Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div data-uk-modal id="modal-login">
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-login">
+            <div class="uk-flex uk-flex-right uk-margin-bottom">
+                <a href="#" class="uk-modal-close">
+                    <img width="14" height="14" src="./img/icons/close.svg" alt="Close">
+                </a>
+            </div>
+            <div class="modal-head">
+                <div class="modal-title uk-text-center">Login</div>
+            </div>
+            <div class="modal-body uk-padding-remove-bottom">
+                <form data-vv-scope="loginForm" v-on:submit.prevent="onSubmitLoginForm" action="#">
+                    <div
+                        class="mb20 uk-position-relative"
+                        v-bind:class="{'form-error': errors.has('loginForm.email')}"
+                    >
+                        <input
+                            v-model="loginForm.email"
+                            v-validate="'required|email'"
+                            class="uk-input"
+                            type="email"
+                            name="email"
+                            placeholder="Email address"
+                        >
+                        <span class="form-error-text">{{ errors.first('loginForm.email') }}</span>
+                    </div>
+                    <div class="mb67 uk-position-relative">
+                        <input
+                            v-model="loginForm.password"
+                            v-validate="'required|length:8'"
+                            class="uk-input"
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                        >
+                        <span class="form-error-text">{{ errors.first('loginForm.password') }}</span>
+                    </div>
+                    <div class="mb30 uk-flex uk-flex-center">
+                        <!--    Если отключено добавить класс uk-disabled  -->
+                        <button class="uk-button uk-button-primary">Log in</button>
+                    </div>
+                    <div class="mb30 uk-flex uk-flex-center">
+                        <a class="modal-link" href="#modal-forgot-password"  data-uk-toggle>Forgot password?</a>
+                    </div>
+                    <div class="mb30 uk-flex uk-flex-center">
+                        <a class="modal-link" href="#modal-register" data-uk-toggle>Don't have an account? <span>Sign Up</span></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div data-uk-modal id="modal-forgot-password">
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-login">
+            <div class="uk-flex uk-flex-right uk-margin-bottom">
+                <a href="#" class="uk-modal-close">
+                    <img width="14" height="14" src="./img/icons/close.svg" alt="Close">
+                </a>
+            </div>
+            <div class="modal-head">
+                <div class="modal-title uk-text-center">Reset password</div>
+            </div>
+            <div class="modal-body uk-padding-remove-bottom">
+                <form data-vv-scope="resetPassworForm" v-on:submit.prevent="onSubmitResetPasswordForm" action="#">
+                    <div
+                        v-bind:class="{'form-error': errors.has('resetPassworForm.email')}"
+                        class="mb20 uk-position-relative">
+                        <input
+                            v-model="resetPassworForm.email"
+                            v-validate="'required|email'"
+                            class="uk-input"
+                            type="email"
+                            name="email"
+                            placeholder="Email address"
+                        >
+                        <span v-if="errors.has('resetPassworForm.email')" class="form-error-text">{{ errors.first('resetPassworForm.email') }}</span>
+                    </div>
+                    <div class="mb30 uk-flex uk-flex-center">
+                        <!--    Если отключено добавить класс uk-disabled  -->
+                        <button class="uk-button uk-button-primary" href="#">Rest password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-uk-modal id="modal-join">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-medium">
+        <div class="modal-head">
+            <div class="modal-title">Join the affiliate program</div>
+        </div>
+        <div class="modal-body">
+            <ul class="step-items">
+                <li>
+                    <div class="step-item-label step-item-green">Step 1</div>
+                    <div class="step-item-desc">Create your partner account by registering at this link.</div>
+                </li>
+                <li>
+                    <div class="step-item-label step-item-yellow">Step 2</div>
+                    <div class="step-item-desc">After logging in to your account, create your first campaign in the
+                        Campaigns section > Create a campaign
+                    </div>
+                </li>
+                <li>
+                    <div class="step-item-label step-item-orange">Step 3</div>
+                    <div class="step-item-desc">The campaign preview and analytics are available in the Campaigns
+                        section > My campaigns
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <div class="uk-child-width-auto@m uk-child-width-1-1" data-uk-grid="margin: uk-margin-top">
+                <div>
+                    <a class="uk-button uk-button-primary uk-width-auto@m uk-width-1-1" href="#">Send an application and
+                        start earning</a>
+                </div>
+                <div>
+                    <a class="uk-button uk-button-default uk-width-auto@m uk-width-1-1"
+                       href="#modal-terms" data-uk-toggle>Terms and conditions of the affiliate program</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-uk-modal id="modal-advertise">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-medium">
+        <div class="modal-head">
+            <div class="modal-title">Advertise to BPartners</div>
+            <div class="modal-desc">Attract players to the Bitslot casino and get up to 50% of the profit received!
+            </div>
+        </div>
+        <div class="modal-body">
+            <ul class="step-items">
+                <li>
+                    <div class="step-item-label step-item-green">Use banners</div>
+                    <div class="step-item-desc">Decorate your stream or website with a bright BPartners banner. Our
+                        banners not only look great, but also significantly increase the prestige of the site,
+                        immediately making it clear that you are working with the best of the best in the industry. Just
+                        write us the necessary banner sizes, and the rest is up to us!
+                    </div>
+                </li>
+                <li>
+                    <div class="step-item-label step-item-yellow">Write a review</div>
+                    <div class="step-item-desc">For successful advertising, it is important to publish a detailed review
+                        of the casino. Tell the players what the main advantages of BPartners are and how to get the
+                        most out of the game with us. And if you have any questions during the writing of the review ,
+                        we will be happy to help.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-item-label step-item-orange">Create a video on youtube</div>
+                    <div class="step-item-desc">Youtube videos are a creative and effective way to attract players.
+                        Humor and a good mood will help to interest the audience and make the advertisement or review
+                        more memorable.
+                    </div>
+                </li>
+                <li>
+                    <div class="step-item-label step-item-red">Be active in social networks</div>
+                    <div class="step-item-desc">The more active your work on Facebook, Twitter and other social
+                        networks, the more diverse opportunities for growth will be. We strongly recommend that you
+                        seriously start distributing news and advertising content in social networks. There is no such
+                        thing as too much!
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <div class="uk-child-width-auto@m uk-child-width-1-1" data-uk-grid="margin: uk-margin-top">
+                <div>
+                    <a class="uk-button uk-button-primary uk-width-auto@m uk-width-1-1" href="#">Send an application and
+                        start earning</a>
+                </div>
+                <div>
+                    <a class="uk-button uk-button-default uk-width-auto@m uk-width-1-1"
+                       href="#modal-terms" data-uk-toggle>Terms and conditions of the affiliate program</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-uk-modal id="modal-earn">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-medium">
+        <div class="modal-head">
+            <div class="modal-title">Earn money</div>
+            <div class="modal-desc">Get your earnings on the first day of each month without transferring the minus to
+                the next month.
+            </div>
+        </div>
+        <div class="modal-body">
+            <ul class="step-items">
+                <li>
+                    <div class="step-item-label step-item-green">Convenience</div>
+                    <div class="step-item-desc">It offers an expanded personal account with a graphical interface for
+                        easy tracking of key indicators, including multi-currency reports with deep customization.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <div class="uk-child-width-auto@m uk-child-width-1-1" data-uk-grid="margin: uk-margin-top">
+                <div>
+                    <a class="uk-button uk-button-primary uk-width-auto@m uk-width-1-1" href="#">Send an application and
+                        start earning</a>
+                </div>
+                <div>
+                    <a class="uk-button uk-button-default uk-width-auto@m uk-width-1-1"
+                       href="#modal-terms" data-uk-toggle>Terms and conditions of the affiliate program</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-uk-modal id="check-mail">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-login">
+        <div class="uk-flex uk-flex-right uk-margin-bottom">
+            <a href="#" class="uk-modal-close">
+                <img width="14" height="14" src="./img/icons/close.svg" alt="Close">
+            </a>
+        </div>
+        <div class="modal-head">
+            <div class="modal-title uk-text-center">Check your mail</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-uk-modal id="sent">
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal-login">
+        <div class="uk-flex uk-flex-right uk-margin-bottom">
+            <a href="#" class="uk-modal-close">
+                <img width="14" height="14" src="./img/icons/close.svg" alt="Close">
+            </a>
+        </div>
+        <div class="modal-head">
+            <div class="modal-title uk-text-center">Thank you! Message sent</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<!-- <script src="vuelidate/dist/vuelidate.min.js"></script> -->
+<script src="https://unpkg.com/vee-validate@2.0.0-rc.18/dist/vee-validate.js"></script>
+<script src="js/registration.js?20"></script>
+<script src="js/main.js?1"></script>
+</body>
+</html>
